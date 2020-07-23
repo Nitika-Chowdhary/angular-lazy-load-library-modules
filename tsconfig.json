@@ -26,6 +26,12 @@
       "@my-lib/*": [
         "dist/my-lib/*"
       ],
+      "@my-lib-container": [
+        "dist/my-lib-container/"
+      ],
+      "@my-lib-container/*": [
+        "dist/my-lib-container/*"
+      ],
     }
   },
   "angularCompilerOptions": {

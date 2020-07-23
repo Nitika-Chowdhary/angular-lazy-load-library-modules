@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('@my-lib/src/lib/time').then(m => m.TimeModule)
   },
   {
+    path: 'nested-lib',
+    loadChildren: () => import('@my-lib-container').then(m => m.LibContainerModule)
+  },
+  {
     path: '**',
     redirectTo: 'home'
   }
